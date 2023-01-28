@@ -42,5 +42,5 @@ jobs:
       safe-checkout: ${{ inputs.safe-checkout }}
       image: ${{ matrix.image }}
       bazel: test ${{ matrix.targets }} ${{ matrix.config.flags }} --distinct_host_configuration=false
-      bazel-cache: cpp_bazel/${{ matrix.config.name }}
+      bazel-cache: cpp_linux/${{ matrix.config.name }}
     secrets: inherit
